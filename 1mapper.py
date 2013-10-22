@@ -67,7 +67,7 @@ def map(filename):
 def mapExtra():
 	dict1=rulescomp()
 	a=open("out1.txt","r")
-	b=open("out12.txt","w")
+	b=open("finaloutput.txt","w")
 	text=a.readlines()
 	#print dict1
 	for aa in text:
