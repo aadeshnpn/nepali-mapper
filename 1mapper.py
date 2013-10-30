@@ -57,6 +57,14 @@ def map(filename):
                     #print aC+'N'
                     b.write(aC+'N ')
                 #print ab,
+                elif aa[i+3:i+6]=="्":
+                    #print ab
+                    aaa=ab.find('AH')
+                    a1=list(ab)
+                    a1[aaa:]=""
+                    ab=''.join(a1)
+                    #print a2
+                    b.write(ab)
                 else:
                     b.write(ab)
             i=i+3
@@ -96,7 +104,7 @@ def rulessingle():
     return dict1
 
 def rulescomp():
-    dict1={"UH IH":"UY","IH UH":"IW","EH IH":"EY","EH UH":"EW","OHIH":"OY","OH UH":"OW","AAIH":"AY","AAUH":"AW","AH AA":"AA ","AH IH":"IH ","AH UH":"UH ","AH OH":"OH ","AH EH":"EH " } 
+    dict1={"UH IH":"UY","IH UH":"IW","EH IH":"EY","EH UH":"EW","OH IH":"OY","OH UH":"OW","AA IH":"AY","AA UH":"AW","AH AA":"AA ","AH IH":"IH ","AH UH":"UH ","AH OH":"OH ","AH EH":"EH " } 
     return dict1
 #Main Fuction that takes the file name as the argument and processes the input file to give the results
 def main():
